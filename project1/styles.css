@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #FF4720;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+h1,p {
+    text-align: center;
+}
+form{
+    width: 70%;
+    min-width: 600px;
+    max-width: 1000px;
+    background-color: #262626;
+    margin: 0 auto;
+    padding: 1rem;
+    color: #F2F2F2 ;
+}
+label{
+    display: block;
+}
+
+.block{
+    display: block;
+}
+input, textarea {
+    background-color: #393636;
+    color:#F2F2F2;
+    
+}

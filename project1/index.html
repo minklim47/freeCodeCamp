@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documen</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
 </head>
 <body>
     <h1 id="title">KMUTT Library Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
 
     <form id="survey-form">
-        <label for="name">Name<input id="name" type="text"></label>
-        <label for="email">Email<input id="email" type="email"></label>
-        <label for="age">Age(optional)<input id="age" type="number"></label>
-        <label >Which option best describes your current role?
-            <select id="role">
+        <label for="name">Name: 
+            <input class="block" id="name" type="text"></label>
+        <label for="email">Email: 
+            <input class="block" id="email" type="email"></label>
+        <label for="age">Age(optional): 
+            <input class="block" id="age" type="number"></label>
+        <label for="role">Which option best describes your current role?
+            <select class="block" id="role">
                 <option>Select current role</option>
                 <option>Undergraduate</option>
                 <option>Master Student</option>
@@ -25,15 +29,15 @@
                 <option>Other</option>
             </select>
         </label>
-        <label>How often do you visit KMUTT Library?
-            <label><input type="radio"> Never</label>
-            <label><input type="radio"> A few times</label>
-            <label><input type="radio"> Every month</label>
-            <label><input type="radio"> Every week</label>
-            <label><input type="radio"> Every day</label>
+        <label for="visit">How often do you visit KMUTT Library?
+            <label for="never"><input id="never" name="visit" type="radio"> Never</label>
+            <label for="few_times"><input id="few_times" name="visit" type="radio"> A few times</label>
+            <label for="every_month"><input id="every_month" name="visit" type="radio"> Every month</label>
+            <label for="every_week"><input id="every_week" name="visit" type="radio"> Every week</label>
+            <label for="every_day"><input id="every_day" name="visit" type="radio"> Every day</label>
         </label>
-        <label>What is your favorite zone of KMUTT Library?
-            <select>
+        <label for="favorite_zone">What is your favorite zone of KMUTT Library?
+            <select class="block" id="favorite_zone">
                 <option>Select an option</option>
                 <option>Purple Room</option>
                 <option>Cafe zone</option>
@@ -43,20 +47,18 @@
                 <option>Reading zone</option>
             </select>
         </label>
-        <label>What would you like to see improved?
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
+        <label for="improve">What would you like to see improved?
+            <label for="book_borrowing" > <input id="book-borrowing" name="improve" type="checkbox">Book-borrowing System</label>
+            <label for="tables_and_chairs"> <input id="tables_and_chairs" name="improve" type="checkbox">Tables and Chairs</label>
+            <label for="cafe"> <input id="cafe" name="improve" type="checkbox">Cafe</label>
+            <label for="activities"> <input id="activities" name="improve" type="checkbox">Activities</label>
+            <label for="active_hours"> <input id="active_hours" name="improve" type="checkbox">Active Hours</label>
+
         </label>
-        <label>Any comments or suggestions?
-            <textarea placeholder="Enter your comment here..."></textarea>
+        <label for="comment">Any comments or suggestions?
+            <textarea class="block" id="comment" placeholder="Enter your comment here..."></textarea>
         </label>
         <input type="submit" value="Submit">
     </form>
-    <p>Helloฟหกก</p>
 </body>
 </html>
